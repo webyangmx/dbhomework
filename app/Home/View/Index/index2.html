@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="__CSS__/normalize.css">
+<link rel="stylesheet" href="__CSS__/font-awesome.min.css">
+<link rel="stylesheet" href="__CSS__/index.css">
+</head>
+<body>
+<div class="container">
+<header>
+	<div class="header-container">
+		<div class="logo">
+			<img src="__IMG__/logo.png" alt="logo">
+		</div>
+		<div class="head-bar">
+			<div class="user">
+				<h1>hello <strong>Dasenerys</strong></h1>
+				<figure>
+					<img src="__IMG__/user.jpg" class="user-logo" alt="头像">
+				</figure>
+			</div>
+			<div class="tips">
+				<ul>
+					<li class="tips-notify">
+						Notifications
+						<span class="tips-notify-num">3</span>
+					</li>
+					<li class="tips-msgs">
+						Messages
+						<span class="tips-msgs-num">12</span></li>
+						<li class="tips-tasks">
+							Tasks
+							<span class="tips-tasks-num">7</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="body">
+		<nav>
+			<ul class="navigator">
+				<li class="nav-item" id="ShowProducts">
+					<i class="fa fa-product-hunt"></i>
+					<a href="#">Show Products</a>
+				</li>
+				<li class="nav-item" id="AddProducts">
+					<i class="fa fa-plus-circle"></i>
+					<a href="#">Add Products</a>
+				</li>
+				<li class="nav-item" id="ReportSales">
+					<i class="fa fa-bar-chart"></i>
+					<a href="#">Report Sales</a>
+				</li>
+			</ul>
+			<ul class="navigator">
+				<li class="nav-item" id="AddPurchases">
+					<i class="fa fa-shopping-cart"></i>
+					<a href="#">Add Purchases</a>
+				</li>
+				<li class="nav-item" id="Logs">
+					<i class="fa fa-list"></i>
+					<a href="#">Logs</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="body-main">
+			<section>
+				<div class="section-main">
+					<ul class="statistics">
+						<li class="statistics-item statistics-visitor">
+							<h5 class="statistic-type">Today's visitors</h5>
+							<span class="statistic-value">3352</span>
+						</li>
+						<li class="statistics-item statistics-revenue">
+							<h5 class="statistic-type">Month revenue</h5>
+							<span class="statistic-value">$112500</span>
+						</li>
+						<li class="statistics-item statistics-mail">
+							<h5 class="statistic-type">Mail</h5>
+							<span class="statistic-value">13</span>
+						</li>
+						<li class="statistics-item statistics-booking">
+							<h5 class="statistic-type">Booking</h5>
+							<span class="statistic-value">78</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="section-main">
+					<div class="pannel-header">
+						<h3 class="pannel-header-name">Sales</h3>
+						<div class="pannel-header-ctrol">
+							<i class="fa fa-bookmark-o pannel-header-slide"></i>
+							<i class="fa fa-close pannel-header-closeBtn"></i>
+						</div>
+					</div>
+					<div class="pannel-body">
+						<div class="report-sales"></div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="section-main">
+					<div class="pannel-header">
+						<h3 class="pannel-header-name">Total Money Amount</h3>
+						<div class="pannel-header-ctrol">
+							<i class="fa fa-bookmark-o pannel-header-slide"></i>
+							<i class="fa fa-close pannel-header-closeBtn"></i>
+						</div>
+					</div>
+					<div class="pannel-body">
+						<div class="report-total-amount"></div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="section-main">
+					<div class="pannel-header">
+						<h3 class="pannel-header-name">Logs</h3>
+						<div class="pannel-header-ctrol">
+							<i class="fa fa-bookmark-o pannel-header-slide"></i>
+							<i class="fa fa-close pannel-header-closeBtn"></i>
+						</div>
+					</div>
+					<div class="pannel-body">
+						<table summary="日志表" class="logs-table">
+							<caption></caption>
+							<thead>
+								<tr>
+									<th>user</th>
+									<th>tableName</th>
+									<th>time</th>
+									<th>operation</th>
+									<th>keyValue</th>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+			<!-- 商品列表 -->
+			<div class="product-list">
+				<div class="product-item product-shadow">
+					<figure>
+						<img src="__IMG__/products_imgs/6108PPVOdoL.jpg" class="product-img" alt="">
+						<figcaption title="架构即未来:现代企业可扩展的Web架构、流程和组织">架构即未来:现代企业可扩展的Web架构、流程和组织</figcaption>
+					</figure>
+				</div>
+			</div>
+			<section>
+				<div class="addProduct-args">
+					<form action="#">
+						<h1>addProduct</h1>
+						<ul>
+							<li class="addProduct-form-text">
+								<label for="addProduct-name">name:</label>
+							</li>
+							<li class="addProduct-form-input">
+								<input type="text" id="addProduct-name">
+								<span class="addProduct-form-stat-succ">
+									<i class="fa fa-check"></i>
+									accepted
+								</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="addProduct-form-text">
+								<label for="addProduct-qoh">qoh:</label>
+							</li>
+							<li class="addProduct-form-input">
+								<input type="number" id="addProduct-qoh">
+								<span class="addProduct-form-stat-wrong">
+									<i class="fa fa-close"></i>
+ 									error
+								</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="addProduct-form-text">
+								<label for="addProduct-qohThreshold">qohThreshold:</label>
+							</li>
+							<li class="addProduct-form-input">
+								<input type="number" id="addProduct-qohThreshold">
+								<span class="addProduct-form-stat-succ">
+									<i class="fa fa-check"></i>
+									accepted
+								</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="addProduct-form-text">
+								<label for="addProduct-originalPrice">originalPrice:</label>
+							</li>
+							<li class="addProduct-form-input">
+								<input type="number" id="addProduct-originalPrice">
+								<span class="addProduct-form-stat-succ">
+									<i class="fa fa-check"></i>
+									accepted
+								</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="addProduct-form-text">
+								<label for="addProduct-discntRate">discntRate:</label>
+							</li>
+							<li class="addProduct-form-input">
+								<input type="number" step=0.01 id="addProduct-discntRate">
+								<span class="addProduct-form-stat-succ">
+									<i class="fa fa-check"></i>
+									accepted
+								</span>
+							</li>
+						</ul>		
+						<button class="addProduct-form-submit">submit</button>
+					</form>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+<div class="mask"></div>
+<div class="product-detail">
+	<i class="fa fa-close product-detail-closeBtn"></i>
+	<figure>
+		<img src="__IMG__/products_imgs/6108PPVOdoL.jpg" class="product-detail-img" alt="">
+		<figcaption class="product-detail-name product-detail-text" title="架构即未来:现代企业可扩展的Web架构、流程和组织">书名：
+			<span>架构即未来:现代企业可扩展的Web架构、流程和组织</span></figcaption>
+			<p class="product-detail-desc product-detail-text">描述：
+				<span>本书是《About Face 3交互设计精髓》的升级版，此次升级把全书的结构重组优化，更加精练和易用；更新了一些适合当下时代的术语和实 例，文字全部重新编译，更加清晰易读；增加了更多目标导向设计过程的细节，更新了现行实践，重点增加了移动和触屏平台交互设计，其实本书多数内容适用于多种平台。本书结构清晰、深入浅出，是一本难得的大师经典之作。本书的读者对象包括数字产品和系统的交互设计师、用户界面设计师、项目经理、 可用性工程师等，以及目前正在学习交互设计和用户界面设计专业的本科和研究生等。</span>
+			</p>
+			<p class="product-detail-salary product-detail-text">库存：<span>120</span>件</p>
+			<p class="product-detail-discnt product-detail-text">折扣：<span>120</span>折</p>
+			<p class="product-detail-price product-detail-text">价格：<span>120</span>元
+				<a href="#" class="product-detail-report">查看销售情况</a>
+			</p>
+			<a href="#" class="product-detail-purchases">立即购买</a>
+		</figure>
+	</div>
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="__JS__/highChartsFunc.js"></script>
+	<script src="__JS__/index.js"></script>
+</body>
+</html>
