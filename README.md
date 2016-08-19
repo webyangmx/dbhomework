@@ -10,7 +10,11 @@
 
 ## 介绍  
 
-后台使用开源[thinkphp框架](http://www.thinkphp.cn/)，前端使用jquery和原生css，部分功能使用mysql数据库的触发器和存储过程实现，另外还用到了用于数据可视化的库[highcharts](http://new.hcharts.cn/)，该网站主要获取数据库数据并展示，也可通过具体后台接口获取某商品的销售情况然后用highcharts可视化展现，由于是在短时间内完成，功能较单一。最后附上一张小截图  
+* 后台使用开源[thinkphp框架](http://www.thinkphp.cn/)，前端使用jquery和原生css，部分功能使用mysql数据库的触发器和存储过程实现
+* 用到了用于数据可视化的库[highcharts](http://new.hcharts.cn/)
+* 该网站主要获取数据库数据并展示，也可通过具体后台接口获取某商品的销售情况然后用highcharts可视化展现
+* 由于是在短时间内完成，功能较单一
+* 最后附上一张小截图  
 
 PS:设计图来源于[优设网](http://www.uisdc.com/)  
 
